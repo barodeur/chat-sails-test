@@ -1,0 +1,6 @@
+extends ../layout
+
+block body
+  h1 Messages
+  ul(ng-controller="MessagesCtrl")
+    li(ng-repeat="message in messages") {{message.body}}
